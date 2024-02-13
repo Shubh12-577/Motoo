@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HAPPY VALENTINE'S DAY MOTOO❤️</title>
+<link rel="icon" type="image/png" sizes="100%" href="https://pngtree.com/so/valentines-day">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6e6; /* Light pink background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    text-align: center;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Added shadow */
+  }
+
+  h1 {
+    font-size: 36px;
+    color: #ff3399; /* Rose pink */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Added text shadow */
+  }
+
+  p {
+    font-size: 20px; /* Increased font size */
+    color: #660033; /* Dark pink text */
+    margin-bottom: 30px;
+    font-family: 'Segoe Script', cursive; /* Romantic font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Added text shadow */
+  }
+
+  .gif-container {
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Added shadow */
+    margin: 0 auto; /* Center the gif */
+    margin-bottom: 30px;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  button {
+    padding: 12px 24px;
+    font-size: 18px;
+    border: 2px solid #ff99cc; /* Light pink border */
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.3s ease;
+    outline: none;
+    background-color: #ff3399; /* Rose pink */
+    color: #fff;
+  }
+
+  button:hover {
+    background-color: #e6005c; /* Lighter shade of pink */
+    border-color: #e6005c; /* Lighter shade of pink border on hover */
+    transform: scale(1.1);
+  }
+
+  button:focus {
+    box-shadow: 0 0 0 3px #ff66b3; /* Pink outline when focused */
+  }
+
+  .shake {
+    animation: shake 0.5s ease-in-out;
+  }
+
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Hey Motoo💕</h1>
+  <p>Motoo sun na I was thinking,if you and me... I mean, if you're agree then can you be my Valentine?</p>
+  <div class="gif-container">
+    <img src="https://media3.giphy.com/media/ZP7zODs282XveerKMI/giphy.gif?cid=6c09b952lag8kkpz3k714tmh2wz5mck1sxegjd7mivscmr2e&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" alt="Valentine's Day Image">
+  </div>
+  <button id="yesButton" onclick="playSong()">Yes, I'd love to!</button>
+  <button id="noButton" onclick="noClicked()">NO!</button>
+</div>
+
+<script>
+  function playSong() {
+    var mp3Url = 'https://github.com/Raw9k-ai/Happy-Valentine-s-day-/raw/main/Video%20by%20jivan_edit%20%5BC2KQghTvZPM%5D.m4a';
+    var audio = new Audio(mp3Url);
+    audio.play();
+    alert("I love you Motoo! ❤️");
+  }
+
+  function noClicked() {
+    alert("Think again Motoo.");
+    document.getElementById('noButton').classList.add('shake');
+    setTimeout(function() {
+      document.getElementById('noButton').classList.remove('shake');
+    }, 500);
+  }
+</script>
+</body>
+</html>
